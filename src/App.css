@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --darkviolet2: #604BE8;
+  --darkviolet: #4c33ee;
+  --violet: #604BE8;
+  --lightViolet: #f3f6ff;
+  --lightViolet2: #f1f3ff;
+  --lightViolet3: rgb(195, 185, 255);
+  --white: #ffffff;
+  --lightwhite: #f3f3f3;
+  --lightwhite2: #ffffff;
+  --lightgrey: #f4f7ff;
+  --lightgrey2: #C3CDE4;
+  --lightgrey3: #626573;
+  --black: #302D3D;
+  --orange: #ff9f01;
+  --green: #03d7a0;
+  --darkgreen: #06ca96;
+  --yellow: #FDD36D;
+  --red: #FF7A7E;
+  --darkred: rgb(249, 71, 77);
+  --blue: #4B76E6;
+  --darkgrey: #8b8f9c;
+  --darkgrey2: #585858;
+}
+
+.app {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+
+}
+
+.header {
+
+
+  padding: 15px;
+  box-shadow: 1px 2px 6px -3px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 1px 2px 6px -3px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 1px 2px 6px -3px rgba(0, 0, 0, 0.44);
+}
+
+.display-header {
+  display: flex;
+  width: 113px;
+  gap: 10px;
+  padding: 2px 2px;
+  border: 2px solid lightgrey;
+  border-radius: 4px;
+  box-shadow: 1px 2px 6px -3px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 1px 2px 6px -3px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 1px 2px 6px -3px rgba(0, 0, 0, 0.44);
+  cursor: pointer;
+}
+
+.display-header img.arrow {
+  transition: transform 0.3s ease;
+}
+
+.display-header img.arrow.rotate {
+  transform: rotate(180deg);
+}
+
+.controls {
+  width: 250px;
+  height: auto;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  justify-content: center;
+  align-items: stretch;
+  box-shadow: -1px 1px 18px -1px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  gap: 10px;
+  z-index: 10000;
+}
+
+.controls p {
+  color: #626573;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.controls div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.controls select {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #626573;
+}
+
+.controls select:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.2);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 10px;
+  background-color: #F4F5F9;
+  padding: 33px;
+  min-height: 100vh;
+}
+
+
+
+.whole-card {
+  display: flex;
+  flex: 18%;
+  flex-direction: column;
+
+}
+
+
+
+
+.userprofile {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  padding: 2px 2px;
+  border: 2px solid #ccc;
+}
+
+
+.plus-dot {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.plus-dot-outside {
+  display: flex;
+  
+  align-items: center;
+  padding: 2px 1px 15px 1px;
+ 
+  
+}
+.group{
+  display: flex;
+
+  gap: 30px;
+}
+.ticket {
+  border: 1px solid lightgrey;
+  background-color: #FFFFFF;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(234, 231, 231, 0.44);
+  margin-bottom: 10px;
+  position: relative; 
+  max-height: max-content;
+  gap: 10px;
+
+}
+
+.ticketID {
+  display: flex;
+  flex-direction: column; 
+  
+  gap: 30px; 
+  
+}
+
+.ticketid-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+ 
+}
+
+.ticketId-img {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.ticketId-right {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+
+}
+
+.ticketId-right img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  padding: 2px;
+}
+.dottt{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: lightgray;
+}
+.ticketid-left .tick{
+  font-weight:300;
+  color: #626573;}
+
+
+
+
+
+
+
+
+
+
+
+
+  .whole-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  
+  .group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .ticket {
+    flex: 1 1 calc(33% - 20px);
+    max-width: calc(33% - 20px);
+    min-width: 250px;
+    box-sizing: border-box;
+  }
+  
+  .plus-dot-outside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%; 
+  
+  }
+  .user-profile-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .user-profile-container img {
+    border-radius: 50%;
+  }
+  
+  .availability-indicator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .availability-indicator.available {
+    background-color: rgb(172, 220, 172);
+  }
+  
+  .availability-indicator.not-available {
+    background-color: rgb(212, 212, 98);
+  }
+  .user-profile-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .user-profile-container img {
+    border-radius: 50%;
+  }
+  
+  .availability-indicator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .availability-indicator.available {
+    background-color: rgb(103, 231, 103);
+  }
+  
+  .availability-indicator.not-available {
+    background-color: rgb(206, 206, 75);
+  }
+  
+
+
+
+
+@media (max-width: 1024px) {
+  .ticket {
+    flex: 1 1 calc(50% - 20px); 
+    max-width: calc(50% - 20px);
+  }
+
+  .whole-card {
+    width: 100%; 
+  }
+
+  .group {
+    gap: 10px; 
+  }
+  .plus-dot-outside {
+    flex-direction: column; 
+    align-items: flex-start;
+    width: 60%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .ticket {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+
+  .plus-dot-outside {
+    flex-direction: column; 
+    align-items: flex-start;
+    width: 60%;
+  }
+
+
+  .controls {
+    width: 100%;
+  }
+}
